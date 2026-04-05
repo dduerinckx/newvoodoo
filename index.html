@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>New Voodoo | Dorian Duerinckx</title>
+  <meta name="description" content="Dark cinematic music portfolio for Dorian Duerinckx / New Voodoo featuring original tracks, video links, visual archive, and artist bio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-wrap">
+      <video autoplay muted playsinline loop preload="auto" class="loader-video">
+        <source src="assets/video/page-loader.mp4" type="video/mp4">
+      </video>
+      <div class="loader-glow"></div>
+      <p class="loader-text">New Voodoo</p>
+    </div>
+  </div>
+
+  <canvas id="ambient-canvas"></canvas>
+  <div class="dust-layer" aria-hidden="true"></div>
+
+  <div class="floating-cubes" aria-hidden="true">
+    <img src="assets/images/nvd-cube-main.png" class="cube cube-1" alt="">
+    <img src="assets/images/nvd-cube-ice.png" class="cube cube-2" alt="">
+    <img src="assets/images/nvd-cube-fire.png" class="cube cube-3" alt="">
+    <img src="assets/images/nvd-cube-main.png" class="cube cube-4" alt="">
+    <img src="assets/images/nvd-cube-ice.png" class="cube cube-5" alt="">
+    <img src="assets/images/nvd-cube-fire.png" class="cube cube-6" alt="">
+  </div>
+
+  <header class="site-header">
+    <a class="brand-lockup" href="#top" aria-label="New Voodoo home">
+      <img src="assets/images/nvd-cube-main.png" alt="New Voodoo cube logo">
+      <div>
+        <span class="brand-kicker">NEW VOODOO</span>
+        <strong>Dorian Duerinckx</strong>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#music">Zyn-Thal</a>
+      <a href="#videos">Voodoo Videos</a>
+      <a href="#visuals">Archive</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="New Voodoo hero section">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Dark • Guitar-Driven • Cinematic</p>
+        <h1>New Voodoo</h1>
+        <p class="hero-subtitle">
+          Songs, imagery, and atmosphere gathered into one graveyard-lit artist space.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#music">Listen</a>
+          <a class="button button-secondary" href="#videos">Watch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="music" class="section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Music</p>
+        <h2>Zyn-Thal</h2>
+        <p>
+          Fifteen tracks presented in compact headstone-styled players, built to stay dark, fast, and clean.
+        </p>
+      </div>
+
+      <div class="track-grid" id="track-grid"></div>
+    </section>
+
+    <section id="videos" class="section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Videos</p>
+        <h2>Voodoo Videos</h2>
+        <p>
+          Skull-marked gateways into the visual side of the work.
+        </p>
+      </div>
+
+      <div class="video-grid">
+        <a class="video-card" href="https://youtu.be/eb4mm05nmFc?si=q5_XNflNYf72bWVD" target="_blank" rel="noopener noreferrer">
+          <div class="video-thumb">
+            <img src="assets/thumbs/video-thumb-01.png" alt="Fxck You! thumbnail">
+            <span class="play-badge">Watch</span>
+          </div>
+          <div class="video-copy">
+            <h3>Fxck You!</h3>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://youtu.be/6XbZHMCoe4A?si=80pjSAefSOYVYOW-" target="_blank" rel="noopener noreferrer">
+          <div class="video-thumb">
+            <img src="assets/thumbs/video-thumb-02.png" alt="Burn It Down thumbnail">
+            <span class="play-badge">Watch</span>
+          </div>
+          <div class="video-copy">
+            <h3>Burn It Down</h3>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://youtu.be/RPQ5OzSa61s?si=QnRsS1mAEoX1z0vQ" target="_blank" rel="noopener noreferrer">
+          <div class="video-thumb">
+            <img src="assets/thumbs/video-thumb-03.png" alt="The Electric Ghost thumbnail">
+            <span class="play-badge">Watch</span>
+          </div>
+          <div class="video-copy">
+            <h3>The Electric Ghost</h3>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://youtu.be/rrOsgjCwJlI?si=RjTMKc4eZoWEEb6u" target="_blank" rel="noopener noreferrer">
+          <div class="video-thumb">
+            <img src="assets/thumbs/video-thumb-04.png" alt="Young Picasso thumbnail">
+            <span class="play-badge">Watch</span>
+          </div>
+          <div class="video-copy">
+            <h3>Young Picasso</h3>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://youtu.be/CtEy7kV_zAo?si=eldsOSwo62jeyjeX" target="_blank" rel="noopener noreferrer">
+          <div class="video-thumb">
+            <img src="assets/thumbs/video-thumb-05.png" alt="Rattle the Cage thumbnail">
+            <span class="play-badge">Watch</span>
+          </div>
+          <div class="video-copy">
+            <h3>Rattle the Cage (2025 Re-Recording)</h3>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://youtu.be/olQuqvQxx9E?si=9Ig9yXQKh2bYXL48" target="_blank" rel="noopener noreferrer">
+          <div class="video-thumb">
+            <img src="assets/thumbs/video-thumb-06.png" alt="More Than Me thumbnail">
+            <span class="play-badge">Watch</span>
+          </div>
+          <div class="video-copy">
+            <h3>More Than Me</h3>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://youtu.be/cQZk7KTaVZI?si=D7ecw7sHp1MbaUUI" target="_blank" rel="noopener noreferrer">
+          <div class="video-thumb">
+            <img src="assets/thumbs/video-thumb-07.png" alt="Being Good to You thumbnail">
+            <span class="play-badge">Watch</span>
+          </div>
+          <div class="video-copy">
+            <h3>Being Good to You</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="visuals" class="section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Archive</p>
+        <h2>Visual Archive</h2>
+        <p>
+          Full-frame imagery, sketches, banners, and visual fragments tied to the New Voodoo atmosphere.
+        </p>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </section>
+
+    <section id="about" class="section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Who Is New Voodoo</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            New Voodoo is currently the recording, performance, mixing, and production work of Dorian Duerinckx.
+            The project is built around dark atmosphere, guitar-driven weight, and a studio-first approach that
+            carries one vision from idea to finished track without sanding off its edge.
+          </p>
+          <p>
+            Dorian Duerinckx currently records and performs, as well as handles studio mixing and production, across
+            the project’s material. The result is layered, cinematic, and intentionally restless rather than polished
+            into something safe.
+          </p>
+
+          <ul class="feature-list">
+            <li>Electric Guitar</li>
+            <li>Acoustic Guitar</li>
+            <li>Bass Guitar <span class="guest-credit">(Special guest Thad Bonduris)</span></li>
+            <li>Keyboards</li>
+            <li>Drum Programming</li>
+            <li>Vocals <span class="guest-credit">(Special guest Gemini)</span></li>
+          </ul>
+        </div>
+
+        <div class="about-stack">
+          <img src="assets/images/nvd-cube-main.png" alt="New Voodoo cube symbol">
+          <img src="assets/images/nvd-cube-ice.png" alt="Ice cube variant">
+          <img src="assets/images/nvd-cube-fire.png" alt="Fire cube variant">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>New Voodoo</p>
+    <p class="footer-note">Dark songs. Strange light. No clean edges.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
