@@ -11,16 +11,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="page-loader" aria-hidden="true">
-    <div class="loader-wrap">
-      <video autoplay muted playsinline loop preload="auto" class="loader-video">
-        <source src="assets/video/page-loader.mp4" type="video/mp4">
-      </video>
-      <div class="loader-glow"></div>
-      <p class="loader-text">New Voodoo</p>
-    </div>
-  </div>
-
   <canvas id="ambient-canvas"></canvas>
   <div class="dust-layer" aria-hidden="true"></div>
 
@@ -51,6 +41,27 @@
   </header>
 
   <main id="top">
+    <a class="featured-release-slot" href="#music" aria-label="Jump to the Zyn-Thal music library and listen to Broken">
+      <span class="featured-release-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="presentation" focusable="false">
+          <defs>
+            <linearGradient id="release-note-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f4d7c2"></stop>
+              <stop offset="55%" stop-color="#b45941"></stop>
+              <stop offset="100%" stop-color="#6d2a58"></stop>
+            </linearGradient>
+          </defs>
+          <path d="M29 9v18.6a7 7 0 1 1-3-5.77V14.18l11-2.76v12.18a7 7 0 1 1-3-5.77V9.75L29 11z" fill="url(#release-note-glow)"></path>
+          <path d="M17.5 6.5c-1.63 1.28-2.8 2.95-2.8 5.19 0 1.78.88 3.23 2.12 4.38-3.25-.55-5.82-3.08-5.82-6.66 0-3.3 2.03-5.99 6.5-8.41Z" fill="#ffb26e" opacity=".92"></path>
+        </svg>
+      </span>
+      <span class="featured-release-copy">
+        <span class="featured-release-label">JUST RELEASED — BROKEN</span>
+        <span class="featured-release-text">A dark-cinematic descent where old wounds still burn beneath the surface.</span>
+      </span>
+      <span class="featured-release-cta">Enter Zyn-Thal</span>
+    </a>
+
     <section class="hero" aria-label="New Voodoo hero section">
       <div class="hero-overlay"></div>
 
@@ -72,7 +83,7 @@
         <p class="eyebrow">Music</p>
         <h2>Zyn-Thal</h2>
         <p>
-          Fifteen tracks presented in compact headstone-styled players, built to stay dark, fast, and clean.
+          Sixteen tracks presented in compact headstone-styled players, with the newest cuts rising to the surface first.
         </p>
       </div>
 
