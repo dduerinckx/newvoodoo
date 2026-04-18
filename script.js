@@ -1,6 +1,10 @@
-const loader = document.getElementById("page-loader");
-
+// Keep newest releases first so the Zyn-Thal library stays in release order.
 const TRACKS = [
+  {
+    title: "Broken",
+    description: "A dark-cinematic descent where old wounds still burn beneath the surface.",
+    file: "assets/audio/Broken.mp3"
+  },
   {
     title: "Mortal",
     description: "A dark pulse-forward cut carried by tension and weight.",
@@ -78,8 +82,7 @@ const TRACKS = [
   }
 ];
 
-window.addEventListener("load", () => {
-  setTimeout(() => loader.classList.add("loaded"), 700);
+document.addEventListener("DOMContentLoaded", () => {
   renderTracks();
   initAudioPlayers();
   initAmbientCanvas();
